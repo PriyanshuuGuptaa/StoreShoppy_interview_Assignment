@@ -17,7 +17,7 @@
                 "time": "1:25 PM"
             },
             "amount": "₹10,000.00",
-            "queued": true,
+            "queued": false,
             "contact": "Ujjwal",
             "createdBy": "Aditya Sharma",
             "utr": "--"
@@ -28,7 +28,7 @@
                 "time": "12:04 PM"
             },
             "amount": "₹10,000.00",
-            "queued": true,
+            "queued": false,
             "contact": "Amit Kumar",
             "createdBy": "Aditya Sharma",
             "utr": "--"

@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import PayoutData from "../PayoutData.json";
-import QueuedBtn from '../assets/queued-btn';
 import { FaRegQuestionCircle } from "react-icons/fa";
+import StatusBtn from '../assets/Status-btn';
+import { useFilters } from './Context/FilterContext';
 
 function PayoutTable({ rowNum }) {
     const [data, setData] = useState([]);
-    console.log(rowNum)
+    const { filters } = useFilters();
+    console.log(filters)
     useEffect(() => {
-        setData(PayoutData.PayoutData);
-    }, [])
+        setData(filters.FilteredPayouts);
+    }, [filters.FilteredPayouts])
     return (
         <div className='text-white text-xs text-center mx-6 px-6 my-3 border-warning-bg border-b-[1px] pb-3'>
             <table className='w-full'>
@@ -24,16 +26,18 @@ function PayoutTable({ rowNum }) {
                 </thead>
                 <tbody>
                     {data.slice(0, rowNum).map((e, index) => {
+
                         return (
                             <tr className='text-center' key={index}>
                                 <td className='text-left py-3'><span>{e.createdAt.date} {e.createdAt.time}</span></td>
                                 <td className='py-3'>{e.amount}</td>
-                                <td className='py-3'><QueuedBtn bool={e.queued} /></td>
+                                <td className='py-3'><StatusBtn bool={e.queued} /></td>
                                 <td className='py-3'>{e.contact}</td>
                                 <td className='py-3'>{e.createdBy}</td>
                                 <td className='py-3'>{e.utr}</td>
                             </tr>
                         );
+
                     })}
                 </tbody>
             </table>
