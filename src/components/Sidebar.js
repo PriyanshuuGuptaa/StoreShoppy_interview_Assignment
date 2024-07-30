@@ -27,14 +27,14 @@ function Sidebar() {
 
     return (
         <aside
-            className={` text-white transition-all duration-300 fixed top-0 left-0 h-full ${isCollapsed ? 'w-16 z-10 bg-header-bg' : 'w-64 z-50 bg-custom-bg'}`}
+            className={` text-white transition-all duration-300 fixed top-0 left-0 h-full overflow-hidden ${isCollapsed ? 'w-16 z-10 bg-header-bg' : 'w-64 z-50 bg-custom-bg'}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className='p-3'>
-                {isCollapsed ? <img src={collapsedLogo} className="w-full" /> : <img src={logo} className="w-32" />}
+            <div className='p-3 max-w-32 max-h-10'>
+                {isCollapsed ? <img src={collapsedLogo} className="max-w-10 max-h-10 object-contain" /> : <img src={logo} className="w-full h-full truncate object-contain" />}
             </div>
-            <ul className="space-y-6 border-warning-bg border-b-[3px] py-3">
+            <ul className="space-y-6 border-warning-bg border-b-[3px] py-6">
                 <SidebarItem icon={<LuHome className='text-sm' />} text="Home" isCollapsed={isCollapsed} />
                 <SidebarItem icon={<MdArrowOutward className='text-sm' />} text="Payouts" isCollapsed={isCollapsed} isNew={true}
                     additionalContent={
@@ -71,7 +71,7 @@ function SidebarItem({ icon, text, isCollapsed, isNew, additionalContent }) {
 
             <div className="flex items-center gap-3 ">
                 {icon}
-                {!isCollapsed && <span className=" text-sm ">{text}</span>}
+                {!isCollapsed && <span className=" text-sm truncate ">{text}</span>}
                 {!isCollapsed && isNew && <Newbtn />}
             </div>
             {additionalContent}
