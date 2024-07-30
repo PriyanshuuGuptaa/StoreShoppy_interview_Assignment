@@ -1,0 +1,75 @@
+.bg-custom-bg {
+    background-color: #080D29;
+}
+
+.text-white {
+    color: white;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+.w-64 {
+    width: 16rem;
+}
+
+.hover\:bg-hover-sidebar:hover {
+    background-color: #2d2d2d;
+    /* Change to your desired hover background color */
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.space-y-2>*+* {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.bg-new-btn-bg {
+    background-color: #ff6f61;
+    /* Change to your desired background color for 'new' button */
+}
+
+.bg-btn {
+    background-color: #1f2937;
+    /* Change to your desired background color for '+' button */
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.space-x-2>*+* {
+    margin-left: 0.5rem;
+}

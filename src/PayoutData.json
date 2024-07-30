@@ -1,0 +1,59 @@
+{
+    "PayoutData": [
+        {
+            "createdAt": {
+                "date": "Fri 9 Feb",
+                "time": "2:32 PM"
+            },
+            "amount": "₹10,000.00",
+            "queued": true,
+            "contact": "Shivam Arora",
+            "createdBy": "Aditya Sharma",
+            "utr": "--"
+        },
+        {
+            "createdAt": {
+                "date": "Fri 9 Feb",
+                "time": "1:25 PM"
+            },
+            "amount": "₹10,000.00",
+            "queued": true,
+            "contact": "Ujjwal",
+            "createdBy": "Aditya Sharma",
+            "utr": "--"
+        },
+        {
+            "createdAt": {
+                "date": "Fri 9 Feb",
+                "time": "12:04 PM"
+            },
+            "amount": "₹10,000.00",
+            "queued": true,
+            "contact": "Amit Kumar",
+            "createdBy": "Aditya Sharma",
+            "utr": "--"
+        },
+        {
+            "createdAt": {
+                "date": "Thu 8 Feb",
+                "time": "3:52 PM"
+            },
+            "amount": "₹50,000.00",
+            "queued": true,
+            "contact": "Harsh",
+            "createdBy": "Aditya Sharma",
+            "utr": "--"
+        },
+        {
+            "createdAt": {
+                "date": "Tue 6 Feb",
+                "time": "4:09 PM"
+            },
+            "amount": "₹10,000.00",
+            "queued": true,
+            "contact": "Random Verma",
+            "createdBy": "Aditya Sharma",
+            "utr": "--"
+        }
+    ]
+}
